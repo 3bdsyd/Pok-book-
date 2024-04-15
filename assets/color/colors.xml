@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="mandy">#E85382</color>
+    <color name="bunker">#0D131A</color>
+    <color name="mercury">#E1E1E1</color>
+    <color name="boulder">#7B7B7B</color>
+    <color name="picton blue">#39BADF</color>
+    <color name="pizazz">#F29600</color>
+    <color name="seashell">#F1F1F1</color>
+    <color name="alto">#DFDFDF</color>
+</resources>
