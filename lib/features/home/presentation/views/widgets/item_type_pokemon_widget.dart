@@ -19,89 +19,93 @@ class ItemTypePokemonWidget extends StatelessWidget {
             color: ColorName.seashell,
             borderRadius: BorderRadius.circular(53),
           ),
-          child: pokemonType == 'fire'
-              ? Text(
-                  '🔥 Fire',
-                  style: TextStyles.style22.copyWith(
-                    fontWeight: FontWeight.normal,
-                    overflow: TextOverflow.ellipsis,
-                  ),
-                )
-              : pokemonType == 'flying'
-                  ? Text(
-                      '🦋 Flying',
-                      style: TextStyles.style22.copyWith(
-                          fontWeight: FontWeight.normal,
-                          overflow: TextOverflow.ellipsis),
-                    )
-                  : pokemonType == 'grass'
-                      ? Text(
-                          '🌿 Grass',
-                          style: TextStyles.style22.copyWith(
-                            fontWeight: FontWeight.normal,
-                            overflow: TextOverflow.ellipsis,
-                          ),
-                        )
-                      : pokemonType == 'poison'
-                          ? Text(
-                              '☠️ Poison',
-                              style: TextStyles.style22.copyWith(
-                                fontWeight: FontWeight.normal,
-                                overflow: TextOverflow.ellipsis,
-                              ),
-                            )
-                          : pokemonType == 'normal'
-                              ? Text(
-                                  '🐻 Normal',
-                                  style: TextStyles.style22.copyWith(
-                                    fontWeight: FontWeight.normal,
-                                    overflow: TextOverflow.ellipsis,
-                                  ),
-                                )
-                              : pokemonType == 'bug'
-                                  ? Text(
-                                      '🐞 Bug',
-                                      style: TextStyles.style22.copyWith(
-                                          fontWeight: FontWeight.normal,
-                                          overflow: TextOverflow.ellipsis),
-                                    )
-                                  : pokemonType == 'water'
-                                      ? Text(
-                                          '💦 Water',
-                                          style: TextStyles.style22.copyWith(
-                                              fontWeight: FontWeight.normal,
-                                              overflow: TextOverflow.ellipsis),
-                                        )
-                                      : pokemonType == 'electric'
-                                          ? Text(
-                                              '⚡ Electric',
-                                              style: TextStyles.style22
-                                                  .copyWith(
-                                                      fontWeight:
-                                                          FontWeight.normal,
-                                                      overflow: TextOverflow
-                                                          .ellipsis),
-                                            )
-                                          : pokemonType == 'ground'
-                                              ? Text(
-                                                  '🐾 Ground',
-                                                  style: TextStyles.style22
-                                                      .copyWith(
-                                                          fontWeight:
-                                                              FontWeight.normal,
-                                                          overflow: TextOverflow
-                                                              .ellipsis),
-                                                )
-                                              : Text(
-                                                  pokemonType,
-                                                  style: TextStyles.style22
-                                                      .copyWith(
-                                                          fontWeight:
-                                                              FontWeight.normal,
-                                                          overflow: TextOverflow
-                                                              .ellipsis),
-                                                ),
+          child: pokemonNameEmoji(),
         ),
+      ),
+    );
+  }
+
+  Text pokemonNameEmoji() {
+    switch (pokemonType) {
+      case 'fire':
+        return Text(
+          '🔥 Fire',
+          style: TextStyles.style22.copyWith(
+            fontWeight: FontWeight.normal,
+            overflow: TextOverflow.ellipsis,
+          ),
+        );
+      case 'flying':
+        return Text(
+          '🦋 Flying',
+          style: TextStyles.style22.copyWith(
+            fontWeight: FontWeight.normal,
+            overflow: TextOverflow.ellipsis,
+          ),
+        );
+
+      case 'grass':
+        return Text(
+          '🌿 Grass',
+          style: TextStyles.style22.copyWith(
+            fontWeight: FontWeight.normal,
+            overflow: TextOverflow.ellipsis,
+          ),
+        );
+      case 'poison':
+        return Text(
+          '☠️ Poison',
+          style: TextStyles.style22.copyWith(
+            fontWeight: FontWeight.normal,
+            overflow: TextOverflow.ellipsis,
+          ),
+        );
+      case 'normal':
+        return Text(
+          '🐻 Normal',
+          style: TextStyles.style22.copyWith(
+            fontWeight: FontWeight.normal,
+            overflow: TextOverflow.ellipsis,
+          ),
+        );
+      case 'bug':
+        return Text(
+          '🐞 Bug',
+          style: TextStyles.style22.copyWith(
+            fontWeight: FontWeight.normal,
+            overflow: TextOverflow.ellipsis,
+          ),
+        );
+      case 'water':
+        return Text(
+          '💦 Water',
+          style: TextStyles.style22.copyWith(
+            fontWeight: FontWeight.normal,
+            overflow: TextOverflow.ellipsis,
+          ),
+        );
+      case 'electric':
+        return Text(
+          '⚡ Electric',
+          style: TextStyles.style22.copyWith(
+            fontWeight: FontWeight.normal,
+            overflow: TextOverflow.ellipsis,
+          ),
+        );
+      case 'ground':
+        return Text(
+          '🐾 Ground',
+          style: TextStyles.style22.copyWith(
+            fontWeight: FontWeight.normal,
+            overflow: TextOverflow.ellipsis,
+          ),
+        );
+    }
+    return Text(
+      pokemonType,
+      style: TextStyles.style22.copyWith(
+        fontWeight: FontWeight.normal,
+        overflow: TextOverflow.ellipsis,
       ),
     );
   }

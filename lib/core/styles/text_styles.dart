@@ -2,6 +2,15 @@ import 'package:flutter/material.dart';
 import 'package:pokebook/core/gen/colors.gen.dart';
 
 class TextStyles {
+  static const style15 = TextStyle(
+    fontSize: 15,
+    color: ColorName.black,
+  );
+   static const style16 = TextStyle(
+    fontSize: 15,
+    color: ColorName.black,
+    fontWeight: FontWeight.w500
+  );
   static const style18 = TextStyle(
     fontSize: 18,
     color: ColorName.black,
